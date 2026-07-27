@@ -1,0 +1,48 @@
+name: mediverse
+description: "MediVerse – AI-powered Healthcare App for Rural India"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+
+  # Navigation
+  go_router: ^14.2.7
+
+  # State
+  provider: ^6.1.2
+
+  # Storage
+  shared_preferences: ^2.3.2
+
+  # Voice
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.2.0
+
+  # Network
+  connectivity_plus: ^6.1.1
+
+  # Files
+  file_picker: ^8.3.4
+
+  # Launcher (phone calls, maps)
+  url_launcher: ^6.3.1
+
+  # Permissions
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  # No asset folders needed (all icons are Material symbols)
