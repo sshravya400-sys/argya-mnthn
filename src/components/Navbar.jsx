@@ -81,10 +81,12 @@ export default function Navbar() {
               <FaCog />
             </Link>
             <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="lg:hidden p-2.5 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
-              aria-label="Menu"
-            >
+  onClick={() => setMenuOpen(!menuOpen)}
+  className="lg:hidden p-2.5 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
+  aria-label="Menu"
+  aria-expanded={menuOpen}
+>
+            
               {menuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
